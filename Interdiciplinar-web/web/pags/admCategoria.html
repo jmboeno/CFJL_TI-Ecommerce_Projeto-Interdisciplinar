@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <!--[if lt IE 9]>
+            <script src="../script/html5shiv.js"></script>
+        <![endif]-->
+        <script src="../script/prefixfree.min.js"></script>
+        <title>Registra Categoria</title>
+    </head>
+    <body>
+        <div id="result"></div>
+        <div class="container">
+            <header class="cabecalho cabecalho-adm">
+            </header>
+
+            <main class="conteudo-adm">
+                <div class="menu-adm-esquerdo">
+                    <ul class="vertical-nav">
+                        <li><i class="fas fa-home"></i><a href="#" name="home-adm">Home</a></li>
+                        <li><i class="fas fa-users"></i><a href="../pags/admCliente.html" name="clientes-amd">Clientes</a></li>
+                        <li><i class="fas fa-clipboard-list"></i><a href="#" name="pedidos-adm">Pedidos</a>
+                            <ul class="sub-menu-adm">
+                                <li><a href="#">Todos</a></li>
+                                <li><a href="#">Finalizados</a></li>
+                                <li><a href="#">Pendentes</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-shopping-cart"></i><a class="adm-vendas">Vendas</a>                           
+                        <li><i class="fas fa-box-open"></i><a class="adm-produtos">Produtos</a>
+                            <ul class="sub-menu-adm">
+                                <li><a href="../pags/admCategoria.html">Categorias</a></li>
+                                <li><a href="../pags/admMarca.html">Marcas</a></li>
+                                <li><a href="../pags/admProduto.html">Itens</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-cog"></i><a class="adm-configuracoes">Configurações</a>
+                            <ul class="sub-menu-adm">
+                                <li><a href="#">Administradores</a></li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="forms-adm-direita">
+                    <h2 style="text-align: center;">Categorias</h2><br>
+                    <form class="admCadastro" name="form" id="form" method="post" action="/interdiciplinar-web/categoriaServlet" >
+                        <div class="dv-campo">
+                            <label for="descricao">Descrição</label><br>
+                            <input id="descricao" type="text" style="width: 30em;"><br>
+                        </div>
+                        <div class="dv-botoes">
+                            <button id="salvar" type="button" name="salvar" >Salvar</button><br>
+                        </div>
+                    </form> 
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cod</th>
+                                <th>Categoria</th> 
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </main>
+
+            <footer class="rodape">
+                <div></div>
+                <div>Copyrigt ecommerce-t14g</div>
+            </footer> 
+        </div>
+
+        <script src="../script/categoria.js"></script>
+    </body>
+</html>

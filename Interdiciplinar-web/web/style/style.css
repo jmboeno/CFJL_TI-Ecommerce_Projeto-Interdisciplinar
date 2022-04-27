@@ -1,0 +1,627 @@
+html{font:16px/100% Arial}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none; color: inherit; cursor:pointer;}
+
+.container,
+.barra-topo,
+.barra-usuario,
+.cabecalho,
+.meio-cabecalho,
+.menu,
+.conteudo,
+.conteudo-adm{
+    box-sizing: border-box;
+}
+
+.barra-topo, .barra-usuario{
+    background-color: #434343;
+    height: 1.875rem;
+    line-height: 2.1875rem;
+    width: 100%;
+    min-width: 12em;
+    display: block;
+    margin-bottom: -3px;
+}
+.fa-user, .fa-address-card{
+    color: #fff;
+    float: right;
+    padding: .5em;
+}
+.fa-user:hover,.fa-address-card:hover {
+    background-color: black;
+    text-shadow: .01em .01em .1em #fff;
+}
+.barra-usuario{
+    display:none;
+}
+#sair, #usuario, #areaAdm{
+    color:#fff;
+}
+.barra-usuario #usuario{
+    position:relative;
+    left: 30%;
+}
+#sair{
+    left:69%;
+}
+#sair, #areaAdm{
+    clear: both;
+    position: relative;
+    font-size: 1em;
+    padding: 1em .7em 1em;
+}
+#sair:hover, #areaAdm:hover{
+    cursor:pointer;
+    background-color: #000;
+}
+.cabecalho {
+    background-image: url("../img/logo.png");
+    background-position: 5%;
+    background-size: 10em;
+    background-repeat: no-repeat;
+    background-color: #040404;
+    height: 8rem;
+}
+.cabecalho-adm{
+    background-position: 5em;
+    background-size: 3em;
+    height: 3em;
+}
+.meio-cabecalho{
+    margin: 0 auto;
+    width: 70rem;
+    height: 8rem;
+}
+.logo{
+    float: left;
+    width: 8em;
+    height: 8em;
+}
+.campo-busca{
+    float: left;
+    border-radius: .5em;
+    width: 30em;
+    height: 2.5em;
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 3em 5em 0 5em;
+    border: .1em solid #fff;
+    padding-left: 1em;
+    font-size: 1.2em;
+    margin-left:16.25rem;
+    background-image: url("../img/icon-lupa.png");
+    background-repeat: no-repeat;
+    background-position: 33.75rem .31rem;
+    background-size: 2.81rem 2.81rem;
+    height: 3.12rem;
+}
+.qtd-cart{
+    color: #444;
+    padding: 0 .25em;
+    font-size: .5em;
+    background-color: #fff;
+    border-radius: .5em;
+    margin-left: .4em;
+}
+#lupa{
+    border-left: .06em solid gray;
+    width: 4.43em;
+    height: 2.75em;
+    float: right;
+    margin-right: 16.18em;
+    margin-top: -3.06em;
+}
+#lupa:hover, .carrinho:hover{
+    cursor:pointer;
+}
+.carrinho{
+    color: #37f;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 8.2%;
+    margin-top: 4%;
+}
+.carrinho2{
+    color: #37f;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 8.2%;
+    margin-top: 4%;
+    float: right;
+}
+.carrinho:hover, .carrinho2:hover{
+    text-shadow: .04em .03em .01em #fff;
+}
+#cart-total{
+    float: right;
+    padding: .9em .5em;
+    font-size: .8em;
+}
+#itens{
+
+    text-align: center;
+    margin: 1em auto;
+}
+.dv-head-carrinho,
+.dv-carrinho-produto{
+    width: 50%;
+    min-width: 42em;
+    border: .1em solid #000;
+    display: inline-block;
+}
+.dv-head-carrinho{
+    height: 2.3em;
+    background-color: #446;
+}
+.dv-head-descricao-carrinho,
+.dv-carrinho-produto-nome{
+    float: left;
+    width: 50%;
+    height: 8.7em;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    border-left: .05em solid black;
+}
+.dv-head-descricao-carrinho{
+    font-size: 1.2em;
+    color: #fff;
+    height: 2em;
+}
+.dv-head-img-carrinho,
+.img-carrinho-produto{
+    float: left;
+    width: 7.9em;
+    height: 8.74em;
+}
+.dv-head-img-carrinho{
+    width: 6.6em;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #fff;
+}
+.dv-head-preco-carrinho,
+.dv-carrinho-produto-preco{
+    float: left;
+    width: 15%;
+    font-size: 1.2em;
+    height: 7.3em;
+    line-height: 8em;
+    border-left: .05em solid #000;
+    border-right: .05em solid #000;
+    text-align: center;
+    color: #03f;
+}.dv-head-preco-carrinho{
+    height: 2em;
+    line-height: 2em;
+    color: #fff;
+}
+.dv-head-qtd-carrinho,
+.dv-carrinho-produto-qtd{
+    float: left;
+    width: 13.9%;
+    font-size: 1.2em;
+    height: 1.5em;
+    line-height: 5em;
+    text-align: center;
+    border-bottom: .04em solid #000;
+    color: #03f;
+    margin: .2em;
+}
+.dv-carrinho-produto-btn-comprar,
+.dv-carrinho-produto-qtd-disponivel{
+    float: left;
+    width: 6.2em;
+    text-align: center;
+    color: #444;
+}
+.dv-carrinho-produto-btn-comprar{
+    margin: 2.5% .45%;
+    cursor: pointer;
+    height: 3em;
+}
+.dv-head-qtd-carrinho{
+    color: #fff;
+    height: 2em;
+    line-height: 2em;
+}
+.barra-menu{
+    clear: both;
+    background: #37f;
+    text-align: center;
+    min-width: 53.7em;
+}
+.barra-menu li{
+    padding: 1em 0;
+}
+.main-menu>li{
+    display: inline-block;
+    width: 10em;
+    text-align: center;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.main-menu{
+    margin: 0;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+} 
+.sub-menu{
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin-top: 1em;	
+    float: left;
+    width: 10em; 
+    text-align: left;
+    box-sizing: border-box;      	
+
+}
+.sub-menu:before{
+    position: absolute;
+}
+.sub-menu li{
+    list-style-type: none;
+    padding: .5em;
+    color: #fff;
+    background: #37f;
+}
+.main-menu>li:hover, .sub-menu>li:hover{
+    background: #444;
+}
+.conteudo{
+    background-color: white;
+    min-height: 40em;
+}
+.conteudo-adm{
+    border-top: .2em solid #03f;
+    background-color: #444;
+    width: 100%;
+    min-height: 40em;
+}
+.conteudo-banners {
+    text-align: center;
+    background-color: rgba(10,23,55,0.5);
+}
+.conteudo-banners div{
+    display: inline-block;
+    margin: 1em 2em;
+}
+.conteudo-banners img{
+    width: 20em;
+    transition: .1s;
+}
+.conteudo-banners img:hover{
+    border-radius: 2em;
+    box-shadow: .1em .1em .2em rgba(99,99,99,0.9);
+}
+#dv-catalogo {
+    margin: 2em 5em 0 5em;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.dv-produto {
+    background: #fefefe;
+    border-radius: 1em;
+    width: 16em;
+    margin: 1.1em -20.9em .1em .1em;
+    padding: .6em;
+    box-shadow: .1em .1em .4em 0 #888888;
+}
+.dv-produto:hover{
+    box-shadow: 0 .1em .1em .2em gray;
+    cursor: pointer;
+
+}
+.dv-produto-nome {
+    text-align: justify;
+    padding: 1em;
+    min-height: 4em;
+    font-weight: bold;
+    font-size: 16px;
+}
+.img-produto {
+    position: relative;
+    padding: .5em;
+    max-width: 15em;
+    max-height: 15em;
+        margin: 0.1em 0.1em 0.1em 2.1em;
+}
+.div-produto-preco {
+    height: 1em;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2em;
+}
+.btn-adicionar {
+    position: relative;
+    color: #fff;
+    background-color: #37f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 3em;
+    width: 13.3em;
+    border-radius: 4px;
+    margin: 1em auto;
+    cursor: pointer;
+    transform: .1s;
+}
+.btn-adicionar:hover{
+    background-color: #444;
+}
+.rodape{
+    background-color: #000;
+    height: 20em;
+    color: #fff;
+    text-align: center;
+}
+.rodape div {
+    position: relative;
+    top: 10em;
+}
+.tituto-categoria-produto{
+    width: 100%;
+    height: 3em;
+    background: #000;
+}
+.tituto-categoria-produto i, .tituto-categoria-produto span{
+    color: #fff;
+    font-size: 1em;
+    margin: 1em 0 1em 3em;
+}
+.tituto-categoria-produto span, btn-home{
+    cursor: pointer;
+}
+.imagem,.imagem img{
+    width: 31.25em;
+    height: 21.87em;
+    border: .1em solid #fff;
+    cursor: crosshair;
+    display: inline-block;
+}
+.zoom{
+    width: 21.87em;
+    height: 21.87em;
+    border: .1em solid #fff;
+    background: #fff;
+    display: inline-block;
+}
+.detalhes-produto{
+    width: 60em;
+    height: 42em;
+    margin: 3em auto;
+    padding: 1em;
+    background: #444;
+    color: #fff;
+    text-align: center;
+}
+.dv-info-produto{
+    width: 53.5em;
+    margin: 1em;
+    border: .1em solid #fff;
+    text-align: left;
+    background: #fff;
+    color: #444;
+    display: inline-block;
+}
+.dv-info-produto h5{
+    margin: 0;
+    padding-left: 1em;
+}
+.dv-info-produto > .btn-adicionar{
+    position: relative;
+    left: 30em;
+}
+.principalLogin,
+.admLogin{
+    border: none;
+    border-radius: 1em 0;
+    width: 15em;
+    height: 20em;
+    margin: 2em auto;
+    padding: 1em;
+    background: rgba(0,0,0,.2);
+}
+.admLogin{
+    margin: 6em auto;
+}
+#email, #senha{
+    width: 15em;
+    line-height: 2em;
+}
+.senhaLogin{
+    margin-top: 1.3em;
+}
+.senhaLogin label, .emailLogin label{
+    color: #fff;
+}
+#logar{
+    margin-top: 1em;
+    width: 15.5em;
+    height: 3em;
+    cursor: pointer;
+}
+.formCadastro{
+    border: .1em solid #444;
+    border-radius: 0 2em;
+    margin: 5em auto;
+    padding: 1em;
+    width: 63em;
+    box-shadow: .1em .3em .3em #444;
+}
+.formCadastro input{
+    border: .1em solid #000;
+    border-radius: .4em;
+}
+.formCadastro input:focus{
+    background-color: #e3e3e3;
+}
+.formCadastro div{
+    margin-bottom: 1em;
+}
+.btn-finalizar{
+    clear: both;
+    height: 4em;
+}
+#enviar{
+    float: right;
+    width: 7em;
+    height: 2em;
+    border: none;
+    background: rgba(0, 0, 0,.5);
+    color: #fff;
+    font-size: 1.7em;
+}
+#enviar:hover{
+    text-shadow: .05em .05em .05em black;
+    box-shadow: .05em .05em .05em black;
+    cursor: pointer;
+}
+.menu-adm-esquerdo{
+    float: left;
+    width: 19.1%;
+    height: 40em;
+    background-color: rgba(0,0,0,.5);
+}
+.adm-cliente{
+    margin: 0 auto;
+}
+.vertical-nav {
+    height:auto;
+    list-style:none;
+    margin: 0;
+}
+.vertical-nav li {
+    position: relative;
+    left: -2.5em;
+    padding: 1em;
+    width: 13.6em;
+    height: 1em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+.vertical-nav li:hover {
+    background-color:#03f;
+    padding-left: 1.5em;
+}
+.vertical-nav li a {
+    font-family:Calibri, Arial;
+    font-size: 1.2em;
+    font-weight:bold;
+    padding-left: 1em;
+}
+vertical-nav ul li ul {
+    display:none;
+    list-style-type:none;
+}
+.vertical-nav li ul {
+    display: none;
+}
+.vertical-nav li:hover ul {
+    display: block;
+}
+.sub-menu-adm li{
+    list-style-type: none;
+    z-index:1;
+    position:relative;
+    top: -2.05em;
+    left: 12.1em;
+    background-color: rgba(0,0,0,.5);
+    border-left: .2em solid #03f;
+    transition: .2s;
+}
+.forms-adm-direita{
+    float: right;
+    width: 80.9%;
+    background-color: #fcf9f9;
+}
+.dv-campo {
+    padding: .6em 0 0 1.2em;
+    float: left;
+}
+.dv-campo > input {
+    border: .1em solid black;
+    border-radius: .5em;
+    padding: .5em;
+    line-height: 2em;
+}
+.dv-campo > input:-moz-read-only {
+    background: #F3F3F3;
+}
+.dv-botoes {
+    padding: 2em;
+    text-align: center;
+    clear: both;
+}
+.dv-botoes > button {
+    padding: .4em 1em;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px 13px;
+}
+th {
+    background: gainsboro;
+}
+.linhaSelecionada {
+    background: skyblue;
+}
+.divImg{
+    height: 16.2em;
+    overflow: hidden;
+    width: 14em;
+}
+.excluir{
+    font-size: 1em;
+    float: right;
+    margin-top: 4.23em;
+    border: 1px solid black;
+    padding: 0.2em;
+    border-right: 0;
+    border-bottom: 0;
+}
+.excluir:hover{
+    cursor:pointer;
+}
+.voltar{
+    background-color: blue;
+    width: 19%;
+    margin-left: 7em;
+    float: left;
+    margin-top: 6em;
+    font-weight: bold;
+    height: 2em;
+    border-radius: 1em;
+    text-align: center;
+    line-height: 2em;
+}
+.voltar:hover{
+    background-color: gray;
+}
+.divImgAdm{
+    overflow: hidden;
+}
+.imagemAdm{
+    width: 100%;
+    height: 50%;
+    opacity: 0.5;
+}

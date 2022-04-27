@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <!--[if lt IE 9]>
+            <script src="../script/html5shiv.js"></script>
+        <![endif]-->
+        <script src="../script/prefixfree.min.js"></script>
+        <title>Cadastro Cliente</title>
+    </head>
+    <body>
+        <div id="result"></div>
+        <div class="container">
+            <header class="cabecalho">
+                <div class="meio-cabecalho">
+                </div>
+            </header>
+            
+            <nav class="barra-menu">
+                <ul class="main-menu">
+                    <li><a href="../index.html"> INÍCIO</a></li>
+                    <li id="categoria1">CONSOLES
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li id="categoria2">ACESSORIOS
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li id="categoria3">JOGOS
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li>CONTATO</li>
+                </ul>
+            </nav>
+
+            <main class="conteudo">
+                <form class="formCadastro" name="form" id="form" method="post" action="/interdiciplinar-web/cadastros" >
+                    <div class="dv-campo">
+                        <label>Nome</label><br />
+                        <input type="text" id="nome" style="width: 34em;"  required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>CPF</label><br />
+                        <input type="text" id="cpf" style="width: 12em;" maxlength="11" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Data de Nascimento</label><br />
+                        <input type="date" id="dataNascimento" style="width: 9em;"  required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Telefone</label><br />
+                        <input type="text" id="fone" style="width: 13em;"  maxlength="12" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Email</label><br />
+                        <input type="email" id="email" style="width: 29em;"  required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>CEP</label><br />
+                        <input type="text" id="cep" style="width: 13em;" maxlength="8" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Cidade</label><br />
+                        <input type="text" id="cidade" style="width: 19em;"  required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Estado</label><br />
+                        <input type="text" id="estado" style="width: 18em;" required />
+                    </div>
+                    <div class="dv-campo">
+                        <label>Bairro</label><br />
+                        <input type="text" id="bairro" style="width: 18em;"  required/>
+                    </div>
+                    
+                    <div class="dv-campo">
+                        <label>Endereço</label><br />
+                        <input type="text" id="endereco" style="width: 30em;" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Número</label><br />
+                        <input type="number" id="numero" style="width: 6em;" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Complemento</label><br />
+                        <input type="text" id="complemento" style="width: 19em;" />
+                    </div>
+                    <div class="dv-campo">
+                        <label>Senha</label><br />
+                        <input type="password" id="senha" style="width: 28.7em;" required/>
+                    </div>
+                    <div class="dv-campo">
+                        <label>Confirma Senha</label><br>
+                        <input type="password" id="confsenha" style="width: 28.7em;" required/>
+                    </div>
+                    <div class="btn-finalizar">
+                        <button id="enviar" type="button" name="enviar">Cadastrar-se</button><br>
+                    </div>
+                </form> 
+            </main>
+
+            <footer class="rodape">
+                <div></div>
+                <div>Copyrigt ecommerce-t14g</div>
+            </footer> 
+        </div>
+
+        <script src="../script/cliente.js"></script>
+    </body>
+</html>

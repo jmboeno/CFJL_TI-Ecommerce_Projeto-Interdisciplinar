@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <!--[if lt IE 9]>
+            <script src="../script/html5shiv.js"></script>
+        <![endif]-->
+        <script src="../script/prefixfree.min.js"></script>
+        <title>Área Administrativa</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="cabecalho cabecalho-adm">
+            </header>
+
+            <main class="conteudo-adm">
+                <div class="menu-adm-esquerdo">
+                    <ul class="vertical-nav">
+                        <li><i class="fas fa-home"></i><a href="../index.html" name="home-adm">Home</a></li>
+                        <li><i class="fas fa-users"></i><a>Clientes</a></li>
+                        <li><i class="fas fa-clipboard-list"></i><a href="#" name="pedidos-adm">Pedidos</a>
+                            <ul class="sub-menu-adm">
+                                <li><a>Todos</a></li>
+                                <li><a>Finalizados</a></li>
+                                <li><a>Pendentes</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-shopping-cart"></i><a class="adm-vendas">Vendas</a>                           
+                        <li><i class="fas fa-box-open"></i><a class="adm-produtos">Produtos</a>
+                            <ul class="sub-menu-adm">
+                                <li><a href="../pags/admCategoria.html">Categorias</a></li>
+                                <li><a href="../pags/admMarca.html">Marcas</a></li>
+                                <li><a href="../pags/admProduto.html">Itens</a></li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-cog"></i><a class="adm-configuracoes">Configurações</a>
+                            <ul class="sub-menu-adm">
+                                <li><a href="#">Administradores</a></li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="forms-adm-direita">
+                    <form class="adm-cadastro-cliente">
+                        <div class="dv-campo">
+                            <label>Nome</label><br />
+                            <input type="text" id="nome" style="width: 23.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>CPF</label><br />
+                            <input type="text" id="cpf" style="width: 13.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Data de Nascimento</label><br />
+                            <input type="date" id="dataNascimento" style="width: 9.37em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Telefone</label><br />
+                            <input type="text" id="fone" style="width: 12.5em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Email</label><br />
+                            <input type="email" id="email" style="width: 23.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>CEP</label><br />
+                            <input type="text" id="cep" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Cidade</label><br />
+                            <input type="text" id="cidade" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Bairro</label><br />
+                            <input type="text" id="bairro" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Estado</label><br />
+                            <input type="text" id="estado" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Endereço</label><br />
+                            <input type="text" id="endereco" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Número</label><br />
+                            <input type="number" id="numero" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Complemento</label><br />
+                            <input type="text" id="complemento" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-campo">
+                            <label>Senha</label><br />
+                            <input type="text" id="senha" style="width: 18.12em;"/>
+                        </div>
+                        <div class="dv-botoes">
+                            <button type="button" id="btnSalvar">Salvar</button>
+                        </div>
+                    </form>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Sexo</th>
+                                <th>Idade</th>
+                                <th>Endereço</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </main>
+
+            <footer class="rodape">
+                <div></div>
+                <div>Copyrigt ecommerce-t14g</div>
+            </footer> 
+
+            <script src="../script/cliente.js"></script>
+        </div>
+    </body>
+</html>

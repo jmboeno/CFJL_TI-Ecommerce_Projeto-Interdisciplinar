@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <!--[if lt IE 9]>
+            <script src="../script/html5shiv.js"></script>
+        <![endif]-->
+        <title>Login</title>
+    </head>
+    <body>
+        <div id="result"></div>
+        <div class="container">
+            <div class="barra-topo">
+                <i class="fas fa-address-card"><a href="../pags/principalCliente.html"> Cadastro</a></i>
+                <i class="fas fa-user"><a href="../pags/principalLogin.html"> Login</a></i>
+            </div>
+            <div class="barra-usuario">
+                <span id="usuario"></span>
+                <span id="sair">Sair</span>
+            </div>
+            <header class="cabecalho">
+                <div class="meio-cabecalho">
+                    <input class="campo-busca" type="text" placeholder="Digite o que você procura" maxlength="43"/>
+                    <div id="lupa"></div>
+                    <i class="carrinho fas fa-shopping-cart"><span class="qtd-cart">0</span></i>
+                </div>
+            </header>
+
+            <nav class="barra-menu">
+                <ul class="main-menu">
+                    <li><a href="../index.html"> INÍCIO</a></li>
+                    <li>CONSOLES
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li>ACESSORIOS
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li>JOGOS
+                        <ul class="sub-menu">
+                            <li>NINTENDO WII</li>
+                            <li>NINTENDO SWITCH</li>
+                            <li>PLAYSTATION 3</li>
+                            <li>PLAYSTATION 4</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                        </ul>
+                    </li>
+                    <li>CONTATO</li>
+                </ul>
+            </nav>
+
+            <main class="conteudo">
+                <div class="principalLogin">
+                    <div class="emailLogin">
+                        <label for="email">Email</label><br>
+                        <input id="email" type="text" class=""><br>
+                    </div>
+                    <div class="senhaLogin">
+                        <label for="senha">Senha:</label><br>
+                        <input id="senha" type="password" class="" maxlength="20"><br>
+                    </div>
+                    <div class="btnLogin">
+                        <button id="logar" type="button" name="logar">Logar</button><br>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="rodape">
+                <div></div>
+                <div>Copyrigt ecommerce-t14g</div>
+            </footer> 
+        </div>
+
+        <script src="../script/login.js"></script>
+    </body>
+</html>
